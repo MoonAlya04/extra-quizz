@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Self-Reflection with Extra Capy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="learning-module">
+        <!-- BRANDING: Mascot -->
+        <div class="mascot-container">
+            <svg class="capybara-mascot" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="M 20,95 C 5,90 5,60 15,45 C 25,30 40,20 50,20 C 60,20 75,30 85,45 C 95,60 95,90 80,95 L 20,95 Z"
+                        fill="#A855F7" />
+                    <circle cx="28" cy="30" r="8" fill="#A855F7" />
+                    <circle cx="72" cy="30" r="8" fill="#A855F7" />
+                    <path d="M 40,45 C 42,42 48,42 50,45 C 52,42 58,42 60,45" fill="none" stroke="#4C1D95"
+                        stroke-width="2" stroke-linecap="round" />
+                    <ellipse cx="50" cy="58" rx="10" ry="7" fill="#6D28D9" />
+                    <path d="M 45,60 C 47,62 53,62 55,60" fill="none" stroke="#D8B4FE" stroke-width="1.5"
+                        stroke-linecap="round" />
+                    <circle cx="35" cy="65" r="5" fill="#F472B6" opacity="0.8" />
+                    <circle cx="65" cy="65" r="5" fill="#F472B6" opacity="0.8" />
+                    <path d="M 50,72 C 40,65 30,75 30,82 C 30,90 50,98 50,98 C 50,98 70,90 70,82 C 70,75 60,65 50,72 Z"
+                        fill="#FBBF24" />
+                </g>
+            </svg>
+        </div>
+
+        <header id="module-header" class="module-header">
+            <h1>Cosmic Reflection</h1>
+            <p>Explore your inner universe with Extra Capy!</p>
+        </header>
+
+        <!-- UI COMPONENTS: Question Display -->
+        <div id="questions-view">
+            <div class="questions-carousel">
+                <div id="questions-container" class="questions-container">
+                    <!-- Question cards will be injected here by JavaScript -->
+                </div>
+            </div>
+            <nav class="navigation-controls">
+                <button id="prev-btn" class="nav-button" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Prev
+                </button>
+                <div id="progress-indicator" class="progress-indicator">1 / 5</div>
+                <button id="next-btn" class="nav-button">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+        <!-- NEW: Summary Screen -->
+        <div id="summary-screen" class="summary-screen" style="display: none;">
+            <h2>Your Cosmic Reflections!</h2>
+            <div id="summary-content">
+                <!-- Summary of answers will be injected here -->
+            </div>
+            <div class="motivation-message">
+                <p>
+                    Well done, amazing! Thanks for your honesty, my Extra friend.
+                    <br>
+                    Let's move on to the next chapter and explore more about yourself!
+                </p>
+                <button class="nav-button rocket-btn">
+                    Next Chapter 🚀
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
